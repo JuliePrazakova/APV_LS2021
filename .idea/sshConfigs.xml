@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="akela.mendelu.cz" id="e249cf63-adf6-4945-b1de-953bf45ca78a" port="22" nameFormat="DESCRIPTIVE" username="xprazak6" />
+    </configs>
+  </component>
+</project>

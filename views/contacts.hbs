@@ -1,0 +1,31 @@
+{{>header}}
+
+<table class="ui celled table welcome">
+    <thead>
+    <tr>
+        <th>Přezdívka</th>
+        <th>Jméno</th>
+        <th>Příjmení</th>
+        <th>Datum narození</th>
+        <th>Adresa</th>
+        <th>Zobrazit kontakt</th>
+        <th>Upravit</th>
+        <th>Vymazat</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#users}}
+        <tr>
+            <td>{{nickname}}</td>
+            <td>{{first_name}}</td>
+            <td>{{last_name}}</td>
+            <td>{{birth_day}}</td>
+            <td>{{street_name}}</td>
+            <td><i class="big address card icon"></i></td>
+            <td><i class="big pencil alternate icon"></i></td>
+            <td><i class="big eraser icon"></i></td>
+        </tr>
+    {{/users}}
+    </tbody>
+</table>

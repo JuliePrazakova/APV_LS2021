@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d7112da5-53c4-4b78-91e3-85ae2c596b58" name="akela" url="http://akela.mendelu.cz">
+        <fileTransfer rootFolder="/akela/export/home/xprazak6/public_html/apv" accessType="SFTP" host="akela.mendelu.cz" port="22" sshConfigId="e249cf63-adf6-4945-b1de-953bf45ca78a" sshConfig="xprazak6@akela.mendelu.cz:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

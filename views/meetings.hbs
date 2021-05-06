@@ -1,0 +1,29 @@
+{{> header}}
+
+
+</table>
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>Datum</th>
+        <th>Místo</th>
+        <th>Poznámka</th>
+        <th>Zobrazit</th>
+        <th>Upravit</th>
+        <th>Vymazat</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#users}}
+        <tr>
+            <td>{{start}}</td>
+            <td>{{city}}</td>
+            <td>{{description}}</td>
+            <td><i class="big zoom-in icon"></i></td>
+            <td><i class="big pencil alternate icon"></i></td>
+            <td><i class="big eraser icon"></i></td>
+        </tr>
+    {{/users}}
+    </tbody>
+</table>
+
