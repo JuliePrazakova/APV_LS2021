@@ -19,9 +19,10 @@
             <td>{{start}}</td>
             <td>{{city}}</td>
             <td>{{description}}</td>
-            <td><i class="big zoom-in icon"></i></td>
-            <td><i class="big pencil alternate icon"></i></td>
-            <td><i class="big eraser icon"></i></td>
+            <td><a href="meeting/view/{{id_meeting}}"><i class="big zoom-in icon"></i></a></td>
+
+                <td><a href="meeting/editmeeting/{{id_meeting}}"><i class="big pencil alternate icon"></i></a></td>
+             <td><a href="meeting/deletemeeting/{{id_meeting}}"><i class="big eraser icon"></i></a></td>
         </tr>
     {{/users}}
     </tbody>

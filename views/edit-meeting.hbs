@@ -1,0 +1,23 @@
+{{>header}}
+<div class="ui raised segment box">
+    <form method="POST" class="ui form">
+        <table class="ui celled structured table">
+            <thead><tr><div class="table-label">UPRAVIT SCHŮZKU</div></tr>
+            </thead>
+            <tbody>
+            {{#meeting}}
+                <tr><td></td><td><strong>původní</strong></td><td><strong>změněné</strong></td></tr>
+                <tr><td><strong>Popis</strong> </td><td>{{description}}</td><td><input type="text" name="desc" id="desc" placeholder="Popis"></td></tr>
+                <tr><td><strong>Trvání</strong></td><td>{{duration}}</td><td>  <input type="time" name="duration" id="duration" value="02:30"></td></tr>
+                <tr><td><strong>Začátek</strong></td><td>{{start}}</td><td><input type="datetime-local" name="start" id="start" value="2018-06-12T19:30"></td></tr>
+
+                <tr><td><strong>Město</strong></td><td>{{city}}</td><td><input type="text" name="city" id="city" placeholder="Město"></td></tr>
+                <tr><td><strong>Ulice</strong></td><td>{{street_name}}</td><td><input type="text" name="street_name" id="street_name" placeholder="Ulice"></td></tr>
+                <tr><td><strong>Číslo domu</strong></td><td>{{street_number}}</td><td><input type="number" name="street_number" id="street_number" placeholder="Číslo domu"></td></tr>
+                <tr><td><strong>PSČ</strong></td> <td>{{zip}}</td><td><input type="text" name="zip" id="zip" placeholder="PSČ"></td></tr>
+            {{/meeting}}
+            </tbody>
+        </table>
+        <input type="submit" value="Uložit" class="ui button">
+    </form>
+</div>

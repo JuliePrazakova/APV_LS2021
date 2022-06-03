@@ -1,0 +1,37 @@
+{{>header}}
+
+<div class="ui raised segment">
+    <div class="ui dividing header">Přidat kontakt</div>
+    <form method="POST" class="ui form">
+        <div class="field">
+            <label>Jméno</label>
+            <div class="three fields">
+                <div class="field"> <input type="text" name="first_name" id="first_name" placeholder="Jméno" required></div>
+                <div class="field"><input type="text" name="last_name" id="last_name" placeholder="Příjmení" required></div>
+                <div class="field"><input type="text" name="nickname" id="nickname" placeholder="Přezdívka" ></div>
+            </div>
+        </div>
+        <div class="fields">
+            <div class="eight wide field">
+                <label>Datum narození</label>
+                <input type="datetime-local" name="dtb" id="dtb" value="1990-06-12T19:30" required></div>
+        </div>
+
+            <div class="field"> <input type="number" name="height" id="height" placeholder="Výška" required></div>
+
+
+        <div class="field">
+            <label>Adresa</label>
+            <div class="two fields">
+                <div class="field"> <input type="text" name="city" id="city" placeholder="Město" required></div>
+                <div class="field"><input type="number" name="zip" id="zip" placeholder="PSČ" required></div>
+            </div>
+            <div class="two fields">
+                <div class="field"> <input type="text" name="street_name" id="street_name" placeholder="Ulice" required></div>
+                <div class="field"><input type="number" name="street_number" id="street_number" placeholder="Číslo domu" required></div>
+            </div>
+        </div>
+
+        <input type="submit" value="Přidat" class="ui button">
+    </form>
+</div>

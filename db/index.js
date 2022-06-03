@@ -9,6 +9,6 @@ const pool = new Pool({
     }
 );
 
-//client.connect();
+pool.connect();
 
 module.exports = pool;

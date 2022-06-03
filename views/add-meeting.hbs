@@ -1,0 +1,36 @@
+{{>header}}
+<div class="ui raised segment">
+    <div class="ui dividing header">Přidat schůzku</div>
+    <form method="POST" class="ui form">
+        <div class="field"><label>Popis</label>
+            <input type="text" name="desc" id="desc" placeholder="popis" required>
+        </div>
+
+        <div class="fields">
+        <div class="eight wide field">
+            <label>Začátek</label>
+      <input type="datetime-local" name="start" id="start" value="2018-06-12T19:30" required></div>
+
+            <div class="eight wide field">
+            <label>Délka</label>
+      <input type="time" name="duration" id="duration" value="02:30" required></div>
+        </div>
+
+        <div class="field">
+            <label>Město</label>
+        <div class="two fields">
+            <div class="field"> <input type="text" name="city" id="city" placeholder="Město" required></div>
+            <div class="field"><input type="number" name="zip" id="zip" placeholder="PSČ" required></div>
+        </div>
+        </div>
+        <div class="field">
+            <label>Ulice</label>
+        <div class="two fields">
+            <div class="field"> <input type="text" name="street_name" id="street_name" placeholder="Ulice" required></div>
+            <div class="field"><input type="text" name="street_number" id="street_number" placeholder="Číslo domu" required></div>
+        </div>
+        </div>
+
+        <input type="submit" value="Přidat" class="ui button">
+   </form>
+   </div>

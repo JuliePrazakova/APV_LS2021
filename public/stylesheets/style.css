@@ -22,3 +22,13 @@ footer {
     width: 100%;
     text-align: center;
 }
+.box {
+    margin:auto;
+}
+.table-label {
+    padding:20px;
+}
+.plus {
+    height: 35px;
+    margin-top:10px;
+}
