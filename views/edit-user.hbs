@@ -1,0 +1,29 @@
+{{>header}}
+<div class="ui raised segment box">
+    <form method="POST" class="ui form">
+    <table class="ui celled structured table">
+        <thead><tr><div class="table-label">UPRAVIT KONTAKT</div></tr>
+        </thead>
+        <tbody>
+        {{#user}}
+            <tr><td></td><td><strong>původní</strong></td><td><strong>změněné</strong></td></tr>
+            <tr><td><strong>Jméno</strong> </td><td>{{first_name}}</td><td><input type="text" name="first_name" id="first_name" placeholder="Jméno" ></td></tr>
+            <tr><td><strong>Příjmení</strong></td><td>{{last_name}}</td><td><input type="text" name="last_name" id="last_name" placeholder="Příjmení" ></td></tr>
+            <tr><td><strong>Přezdívka</strong></td><td>{{nickname}}</td><td><input type="text" name="nickname" id="nickname" placeholder="Přezdívka" ></td></tr>
+            <tr><td><strong>Věk</strong></td><td>{{birth_day}}</td><td><input type="datetime-local" name="dtb" id="dtb" value="1990-06-12T19:30" ></td></tr>
+            <tr><td><strong>Výška</strong></td><td>{{height}}</td><td><input type="number" name="height" id="height" placeholder="Výška"></td></tr>
+            <tr><td><strong>Pohlaví</strong></td><td>{{gender}}</td><td><select>
+                <option selected disabled>Pohlaví</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select></td></tr>
+            <tr><td><strong>Město</strong></td><td>{{city}}</td><td><input type="text" name="city" id="city" placeholder="Město"></td></tr>
+            <tr><td><strong>Ulice</strong></td><td>{{street_name}}</td><td><input type="text" name="street_name" id="street_name" placeholder="Ulice"></td></tr>
+            <tr><td><strong>Číslo domu</strong></td><td>{{street_number}}</td><td><input type="number" name="street_number" id="street_number" placeholder="Číslo domu"></td></tr>
+            <tr><td><strong>PSČ</strong></td> <td>{{zip}}</td><td><input type="number" name="zip" id="zip" placeholder="PSČ"></td></tr>
+        {{/user}}
+        </tbody>
+    </table>
+        <input type="submit" value="Uložit" class="ui button">
+    </form>
+</div>

@@ -1,0 +1,50 @@
+<div class="wrapper-users">
+    <div class="header">
+        <div class="nav">
+            <div class="nav-title">
+                TRACKER
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="users">Users</a>
+                    </li>
+                    <li>
+                        <a href="meetings">Meetings</a>
+                    </li>
+                    <!--<li>
+                    <a href="map">Map</a>
+                    </li>-->
+                    <li>
+                        <a href="administration">Administration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Username</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#users}}
+            <tr>
+                <td>{{first_name}}</td>
+                <td>{{last_name}}</td>
+                <td>{{nickname}}</td>
+                <td>{{age.years}}</td>
+                <td>{{city}}</td>
+            </tr>
+        {{/users}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+<div class="ui raised segment">
+    <div class="ui form">
+        <h1>Registrace</h1>
+        <form method="POST">
+            <div class="field">
+            <p>Uživatelské jméno</p>
+            <input type="text" name="username" id="username" placeholder="Uživatelské jméno" required>
+            </div>
+            <div class="field">
+            <p>Email</p>
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="example@example.com" required>
+            </div>
+
+            <div class="field">
+            <p>Heslo</p>
+            <input type="password" name="password" id="password" placeholder="Heslo" required>
+            </div>
+            <input class="ui button" type="submit" value="Registrovat">
+        </form>
+        <p class="">{{message}}</p>
+    </div>
+</div>

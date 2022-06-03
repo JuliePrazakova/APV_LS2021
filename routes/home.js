@@ -4,7 +4,7 @@ const pool = require('../db');
 
 
 router.get('/', async (req, res) => {
-        res.render('home', {
+        res.render('signin', {
             title: 'Diář'
         });
 

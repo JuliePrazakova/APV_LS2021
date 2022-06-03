@@ -22,9 +22,9 @@
             <td>{{last_name}}</td>
             <td>{{birth_day}}</td>
             <td>{{street_name}}</td>
-            <td><i class="big address card icon"></i></td>
-            <td><i class="big pencil alternate icon"></i></td>
-            <td><i class="big eraser icon"></i></td>
+            <td><a href="contact/view/{{id_person}}"><i class="big address card icon"></i></a></td>
+            <td><a href="contact/edituser/{{id_person}}"><i class="big pencil alternate icon"></i></a></td>
+            <td><a href="contact/deleteuser/{{id_person}}"><i class="big eraser icon"></i></a></td>
         </tr>
     {{/users}}
     </tbody>
